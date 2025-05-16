@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <br>
+        <div class="row">
+           <div class="Top"> 
+            <div class="col-sm-6">        
+                
+                <h2 align="center">基督教香港潮人生命堂</h2>
+                <h4 align="center">THE HONG KONG SWATOW CHRISTIAN CHURCH</h4>
+            </div>
+
+            <div class="col-sm-6">
+                <button id="changeColorBtn">切換日夜模式</button>
+                <script>
+            
+                    var webpage = document.querySelector('body');
+                    var btn = document.querySelector('#changeColorBtn');
+        
+                    const COLOR_PRESETS = ['#9ac0d6', '#c6e6f9', '#5c789e', '#314f76'];
+                    let currentIndex = 0;
+
+                    btn.addEventListener('click', function() {
+                    currentIndex = (currentIndex + 1) % COLOR_PRESETS.length;
+                    webpage.style.backgroundColor = COLOR_PRESETS[currentIndex];
+                    });
+                </script>
+    
+   
+            </div>
+           </div> 
+        </div>
+
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand">
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html">主頁</a></li>
+                    <li class="nav-item"><a href="info.html">教會資料</a></li>
+                    <li class="nav-item"><a href="department.html">教會部門</a></li>
+                    <li class="nav-item"><a href="calender.html">行事曆</a></li>
+                    <li class="nav-item"><a href="timetable.html">聚會時間表</a></li>
+                    <li class="nav-item1"><a href="files.html">週刊/月刊</a></li>
+                    <li class="nav-item"><a href="ask.html">查詢</a></li>
+                    <li class="nav-item"><a href="contact.html">聯絡我們</a></li>
+                    <div class="box"></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <br>
+
+
+
+ <table  class="center" width="689" border="0">
+    <tr>
+        
+     <td width="687" rowspan="2" align="center" valign="top"><table width="689" background="images/body_title_bg.jpg" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+              <tr>
+                <td valign="top"><font color="#1E90FF" size="+1"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>每週週刊</strong> </font><br>
+                  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					  
+                    <embed src="LifeWeekly.pdf#toolbar=0" type="application/pdf" width="80%" height="750px"><br><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><font color="#1E90FF" size="+1"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>每月月刊</strong> </font><br>
+                  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <embed src="LifeMonthly.pdf#toolbar=0" type="application/pdf" width="80%" height="750px"><br><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><table width="689" border="0" cellspacing="0" cellpadding="0">
+                  <tbody><tr>
+                    <td width="37" rowspan="3">&nbsp;</td>
+                    <td width="614" height="8"></td>
+                    <td width="38" rowspan="3">&nbsp;</td>
+                  </tr>
+                  <tr>
+					  
+					
+					  
+                  </tr>
+                  
+                  
+                  
+                  
+                  <tr>
+					  
+                  
+                  </tr>
+                  
+                  <tr>
+                    <td class="swatow_content_font">&nbsp;</td>
+                  </tr>
+                </tbody></table></td>
+              </tr>
+            </tbody></table></td>
+   </tr>
+ </table>
+
+  </table>
+
+</body>
+</html>
